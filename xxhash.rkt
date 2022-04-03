@@ -55,9 +55,9 @@
 (define-xxhash XXH3_128bits_withSecretandSeed (_fun _pointer _size _pointer _size _XXH64_hash_t -> _XXH128_hash_t))
 
 (define-xxhash XXH3_128bits_reset (_fun _XXH3_state_s-pointer -> _XXH_errorcode))
-(define-xxhash _XXH3_128bits_reset_withSecret (_fun _XXH3_state_s-pointer _pointer _size -> _XXH_errorcode))
-(define-xxhash _XXH3_128bits_reset_withSeed (_fun _XXH3_state_s-pointer _XXH64_hash_t -> _XXH_errorcode))
-(define-xxhash _XXH3_128bits_reset_withSecretandSeed (_fun _XXH3_state_s-pointer _pointer _size _XXH64_hash_t -> _XXH_errorcode))
+(define-xxhash XXH3_128bits_reset_withSecret (_fun _XXH3_state_s-pointer _pointer _size -> _XXH_errorcode))
+(define-xxhash XXH3_128bits_reset_withSeed (_fun _XXH3_state_s-pointer _XXH64_hash_t -> _XXH_errorcode))
+(define-xxhash XXH3_128bits_reset_withSecretandSeed (_fun _XXH3_state_s-pointer _pointer _size _XXH64_hash_t -> _XXH_errorcode))
 
 (define-xxhash XXH3_128bits_update (_fun _XXH3_state_s-pointer _pointer _size -> _XXH_errorcode))
 (define-xxhash XXH3_128bits_digest (_fun _XXH3_state_s-pointer -> _XXH128_hash_t))
